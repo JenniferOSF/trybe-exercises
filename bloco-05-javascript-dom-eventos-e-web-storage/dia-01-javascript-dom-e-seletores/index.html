@@ -48,6 +48,12 @@
         - document.getElementsByClassName()
         - document.getElementsByTagName()
         1. Crie e execute uma função que mude o texto na tag `<p>-----</p>`, para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+
+        function changeText() {
+            let descricao = document.getElementByTagName('p')[1];
+            descricao.innerHTML = "Ser minha melhor versão todos os dias e conquistar meu espaço no mercado de trabalho";
+        }
+        changeText();
     
         2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
         3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
@@ -55,11 +61,12 @@
         5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
         6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-        function changeText() {
-            let descricao = document.getElementByTagName('p')[1];
-            descricao.innerHTML = "Ser minha melhor versão todos os dias e conquistar meu espaço no mercado de trabalho";
+
+        function changeColor() {
+            let chanceColorGreen = document.getElementsByClassName('main.content')[0];
+            chanceColorGreen.style.background = "rgb(76,164,109)";
         }
-        changeText();
+        changeColor();
             
     </script>
   </body>
