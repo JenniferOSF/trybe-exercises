@@ -62,17 +62,22 @@
         }
         changeColor();
         3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
-        4. Crie e execute uma função que corrija o texto da tag <h1>.
-        5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
-        6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
-        */
-
-      function changeColorContainer() {
+        function changeColorContainer() {
         let changeColorWhite = document.getElementsByClassName('center-content');
         changeColorWhite.style.background = white;
       }
       changeColorContainer();
-      
+
+        4. Crie e execute uma função que corrija o texto da tag <h1>.
+        5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
+        6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+        function correctText() {
+            let correctTextTag = document.getElementsByTagName('h1')[0];
+            correctTextTag.innerHTML = "Exercício 5.1 - JavaScript";
+        }
+        correctText();
+
     </script>
   </body>
 </html>
