@@ -69,14 +69,19 @@
       changeColorContainer();
 
         4. Crie e execute uma função que corrija o texto da tag <h1>.
-        5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
-        6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
-        */
-        function correctText() {
+            function correctText() {
             let correctTextTag = document.getElementsByTagName('h1')[0];
             correctTextTag.innerHTML = "Exercício 5.1 - JavaScript";
         }
         correctText();
+        5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
+        6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+        function paragraphUpperCase() {
+            let paragraph = document.getElementsByTagName('p')[0];
+            paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+        }
+        paragraphUpperCase();
 
     </script>
   </body>
