@@ -29,3 +29,6 @@ const lesson1 = {
 
   const sizeObj = (obj) => Object.keys(obj).length;
   console.log(sizeObj(lesson1));
+
+  const listValues = (obj) => Object.values(obj);
+  console.log(listValues(lesson1));
