@@ -1,7 +1,10 @@
 // exercicio 7
 
-const expectedResult = true;
+const expectedResult = false;
 
-function someBookWasReleaseOnThe80s() {
-  books.some((book) => book.releaser >= 1980 && book.releaser < 1990);
+function authorUnique() {
+    return books.every((book) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === book.author.birthYear)
+      && (bookSome.author.name !== book.author.name)));
 }
