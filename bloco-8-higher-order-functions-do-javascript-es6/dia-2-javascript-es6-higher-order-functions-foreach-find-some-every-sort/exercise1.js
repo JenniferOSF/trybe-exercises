@@ -45,8 +45,19 @@ const expectedResult = [
     },
   ];
   
-  function booksOrderedByReleaseYearDesc() {
-    return expectedResult.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear);
-  }
+  //function booksOrderedByReleaseYearDesc() {
+  //  return expectedResult.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear);
+  //}
   
-  console.log(booksOrderedByReleaseYearDesc());
+  //console.log(booksOrderedByReleaseYearDesc());
+
+  //Exercicio 6
+
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+    return books.every((book) => (
+    book.author.birthYear >= 1901 && book.author.birthYear <= 2000
+    ));
+}
+console.log(everyoneWasBornOnSecXX());
