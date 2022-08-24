@@ -47,3 +47,5 @@ const handlePokemonSearch = (error, message) => {
 };
   
 getPokemonDetails('Squirtle', handlePokemonSearch);
+
+module.exports = getPokemonDetails;
