@@ -1,8 +1,20 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
-function App() {
-  return (<span>Nome-App</span>);
+const Task = (value) => {
+  return (
+    <li key="value">{value}</li>
+  );
+}
+
+const listaDeTarefas = ['Acordar', 'Ler', 'Meditar', 'Caminhar', 'Trabalhar'];
+
+class App extends React.Component {
+  render () {
+    return (
+      <ul>{listaDeTarefas.map(tarefa => Task(tarefa))}</ul>
+    );
+  }
 }
 
 export default App;
