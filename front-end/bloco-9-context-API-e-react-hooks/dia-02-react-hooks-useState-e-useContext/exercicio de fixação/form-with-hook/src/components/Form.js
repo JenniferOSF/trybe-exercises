@@ -1,11 +1,26 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import FormContext from '../context/FormContext';
 
 function Form() {
     const [name, setName] = useState('');
     const [age, setAge] = useState('');
     const [city, setCity] = useState('');
     const [module, setModule] = useState();
+
+    const { addData } = useContext(FormContext);
+
+    const handleClick = (event) => {
+        event.preventDefault();
+        const personalInfo = {
+            name,
+            age,
+            city,
+            module,
+        }
+        addData(personalInfo);
+    }
+
     return(
         <form>
             <fieldset>
@@ -98,10 +113,7 @@ function Form() {
             </fieldset>
             <button
                 type="submit"
-                onClick={ (event) => {
-                event.preventDefault();
-                console.log('Click!');
-                } }
+                onClick={ handleClick }
             >
                 ENVIAR
             </button>
